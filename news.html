@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>VeryToxic</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css?v=28'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/logo-mini.png">
+    <script src="https://kit.fontawesome.com/48043303b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+</head>
+
+<section id="article-link"></section>
+<body class="news-body">
+    <section id="header-link"></section>
+    <section class="main">
+        <div class="sub-page__main">
+            <div class="sub-page__title">Новости</div>
+            <div class="news-wrapper">
+                <div class="news-unit news-left" data-aos='fade-up'>
+                    <img src="media/uwp644995.png" alt="">
+                    <div class="news-prev-text">
+                        <span class="news-date">30/05/2022</span>
+                        <h1>Новый ландшафт</h1>
+                        <a href="#article-link" onclick="newsOpen(one)">Смотреть новость <i
+                                class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-unit news-right" data-aos='fade-up'>
+                    <img src="media/benefit-img-3.jpg" alt="">
+                    <div class="news-prev-text news-prev-text__right">
+                        <span class="news-date">30/05/2022</span>
+                        <h1>Обновленный спавн</h1>
+                        <a href="#article-link" onclick="newsOpen(two)">Смотреть новость <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-unit news-left" data-aos='fade-up'>
+                    <img src="media/uwp644995.png" alt="">
+                    <div class="news-prev-text">
+                        <span class="news-date">30/05/2022</span>
+                        <h1>Новый ландшафт</h1>
+                        <a href="article.html">Смотреть новость <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-link"></section>
+
+    <script src='main.js?v=23'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('#header-link').load('assets/header.html?v=16')
+            $('#footer-link').load('assets/footer.html?v=14')
+            $('#article-link').load('assets/article-form.html?v=13')
+        })
+    </script>
+
+    <script>
+        AOS.init({
+            offset: 20,
+            duration: 600,
+        });
+    </script>
+</body>
+
+</html>

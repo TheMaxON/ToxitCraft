@@ -1,0 +1,123 @@
+<section class="header">
+    <div class="menu-burger" onclick="burgerOpen()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="header-logo">
+        <img
+            src="media/logo-mini.png"
+            alt=""
+            title="Главная"
+            onclick="window.location='index.html'" />
+    </div>
+    <div class="nav-bar">
+        <a href="index.html" id="home-tab">Главная</a>
+        <a href="classes.html" id="classes-tab">Классы</a>
+        <a href="rules.html" id="rules-tab">Правила</a>
+        <a href="gallery.html" id="gallery-tab">Галерея</a>
+        <a href="support.html" id="support-tab">Поддержка</a>
+    </div>
+    <span class="play-header" onclick="window.location='subscription.html'"
+        >ИГРАТЬ</span
+    >
+</section>
+
+<section class="header-mobile">
+    <div class="header-mobile__wrapper" onclick="burgerOpen()">
+        <div
+            class="header-mobile__item hm-home"
+            onclick="window.location='index.html'">
+            <h1>Главная</h1>
+        </div>
+        <div
+            class="header-mobile__item hm-classes"
+            onclick="window.location='classes.html'">
+            <h1>Классы</h1>
+        </div>
+        <div
+            class="header-mobile__item hm-news"
+            onclick="window.location='news.html'">
+            <h1>Новости</h1>
+        </div>
+        <div
+            class="header-mobile__item hm-rules"
+            onclick="window.location='rules.html'">
+            <h1>Правила</h1>
+        </div>
+        <div
+            class="header-mobile__item hm-gallery"
+            onclick="window.location='gallery.html'">
+            <h1>Галерея</h1>
+        </div>
+        <div
+            class="header-mobile__item hm-support"
+            onclick="window.location='support.html'">
+            <h1>Поддержка</h1>
+        </div>
+    </div>
+    <div class="header-mobile__nav">
+        <div class="hm-back" onclick="burgerClose()">
+            <h1>
+                <i class="fa-solid fa-chevron-left" data-aos="fade-up"></i>
+                НАЗАД
+            </h1>
+        </div>
+    </div>
+</section>
+
+<script>
+    const header = document.querySelector('.header');
+    window.onscroll = function () {
+        scrollFunction(), scrollDisapear();
+    };
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            header.classList.remove('header-compact');
+            document.querySelector('.header img').style.display = 'initial';
+            document.querySelector('.nav-bar').style.height = '4em';
+        } else {
+            header.style.pageYOffset = '10rem';
+        }
+        prevScrollpos = currentScrollPos;
+    };
+
+    function homeActive() {
+        const homeTab = document.querySelector('#home-tab');
+        homeTab.classList.add('home-tab__active');
+    }
+    function classesActive() {
+        const classesTab = document.querySelector('#classes-tab');
+        classesTab.classList.add('classes-tab__active');
+    }
+    function rulesActive() {
+        const rulesTab = document.querySelector('#rules-tab');
+        rulesTab.classList.add('rules-tab__active');
+    }
+    function galleryActive() {
+        const galleryTab = document.querySelector('#gallery-tab');
+        galleryTab.classList.add('gallery-tab__active');
+    }
+    function supportActive() {
+        const supportTab = document.querySelector('#support-tab');
+        supportTab.classList.add('support-tab__active');
+    }
+
+    //ADAPTATION
+
+    if (window.screen.width <= 550) {
+        document.querySelector('.play-header').innerHTML =
+            '<i class="fa-solid fa-gamepad"></i>';
+        document.querySelector('.play-header').style.width = '3.2rem';
+        document.querySelector('.play-header').style.height = '2.8rem';
+        document.querySelector('.play-header').style.fontSize = '1.7rem';
+    }
+
+    // NO IMG CONTEXTMENU
+    $(function () {
+        $('img').bind('contextmenu', function () {
+            return false;
+        });
+    });
+</script>

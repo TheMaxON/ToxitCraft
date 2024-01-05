@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>VeryToxic</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="style.css?v=28" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="media/logo-mini.png" />
+        <script
+            src="https://kit.fontawesome.com/48043303b9.js"
+            crossorigin="anonymous"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="slick-1.8.1/slick/slick.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="slick-1.8.1/slick/slick-theme.css" />
+    </head>
+
+    <body
+        class="classes-body"
+        onload="classesActive(); descboxOverlayMobile();">
+        <section id="header-link"></section>
+        <section class="main">
+            <div class="sub-page__main">
+                <div class="sub-page__title">Классы</div>
+                <div class="classes-container" data-aos="fade-up">
+                    <div
+                        class="dwarves character-class"
+                        onclick="dwarfExtend()">
+                        <div class="class-info">
+                            <img src="media/dwarves-icon.png" alt="" />
+                            <h1>Дворфы</h1>
+                            <p>
+                                Древний народ, произошедший от земельников,
+                                существ из живого камня, созданных титанами еще
+                                на заре мира.
+                            </p>
+                            <h2>ВОИНЫ</h2>
+                            <h3>
+                                Узнать больше
+                                <i
+                                    class="fa-solid fa-angle-right"
+                                    style="font-size: 1.3rem"></i>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="mage character-class" onclick="mageExtend()">
+                        <div class="class-info">
+                            <img src="media/mages-icon.png" alt="" />
+                            <h1>Маги</h1>
+                            <p>
+                                Маги уничтожают врагов тайными заклинаниями.
+                                Несмотря на магическую силу, маги хрупки, не
+                                носят тяжелых доспехов.
+                            </p>
+                            <h2>ВОЛШЕБНИКИ</h2>
+                            <h3>
+                                Узнать больше
+                                <i
+                                    class="fa-solid fa-angle-right"
+                                    style="font-size: 1.3rem"></i>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="orcs character-class" onclick="orcExtend()">
+                        <div class="class-info">
+                            <img src="media/orcs-icon.png" alt="" />
+                            <h1>Орки</h1>
+                            <p>
+                                Для своих врагов они устрашающие и дикие
+                                противники, в своей хитрости и жестокости не
+                                имеющие достойных соперников.
+                            </p>
+                            <h2>ВОИНЫ</h2>
+                            <h3>
+                                Узнать больше
+                                <i
+                                    class="fa-solid fa-angle-right"
+                                    style="font-size: 1.3rem"></i>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="elves character-class" onclick="elvesExtend()">
+                        <div class="class-info">
+                            <img src="media/elves-icon.png" alt="" />
+                            <h1>Эльфы</h1>
+                            <p>
+                                Для своих врагов они устрашающие и дикие
+                                противники, в своей хитрости и жестокости не
+                                имеющие достойных соперников.
+                            </p>
+                            <h2>ЗАЩИТНИКИ</h2>
+                            <h3>
+                                Узнать больше
+                                <i
+                                    class="fa-solid fa-angle-right"
+                                    style="font-size: 1.3rem"></i>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-overlay__container">
+                    <div class="class-overlay">
+                        <div class="class-title">ДВОРФЫ</div>
+                        <div class="class-header_mobile">
+                            <div
+                                class="class-header_mobile_item class-mobile_header_details">
+                                ИНФОРМАЦИЯ
+                            </div>
+                            <div
+                                class="class-header_mobile_item class-mobile_header_descbox">
+                                ОПИСАНИЕ
+                            </div>
+                        </div>
+                        <div class="class-overlay__content">
+                            <div class="class-details">
+                                <div class="class-details__header">
+                                    ИНФОРМАЦИЯ
+                                </div>
+                                <div class="class-details__wrapper">
+                                    <div>БРОНЯ</div>
+                                    <p>Кожанная - Незеритовая</p>
+                                    <div>ОРУЖИЕ</div>
+                                    <p>Кожанная - Незеритовая</p>
+                                    <div>СПОСОБНОСТЬ</div>
+                                    <p>Кожанная - Незеритовая</p>
+                                </div>
+                            </div>
+                            <div class="class-img__box">
+                                <img src="media/dwarf-icon.png" alt="" />
+                            </div>
+                            <div class="class-descbox">
+                                <div class="class-descbox__header">
+                                    ОПИСАНИЕ
+                                </div>
+                                <p>
+                                    <span class="text-highlighter">Орки</span>
+                                    всегда предпочитают ближний бой, где каждый
+                                    может показать свою силу, выучку и
+                                    храбрость. Их яростные воины известны всем
+                                    за свою
+                                    <span class="text-highlighter"
+                                        >огромную силу и нерушимую
+                                        стойкость</span
+                                    >.
+                                    <br />
+                                    <br />
+                                    Орки очень
+                                    <span class="text-highlighter"
+                                        >гордая и свободолюбивая раса</span
+                                    >, хотя в свое время они находились под
+                                    гнетом демонического проклятия и
+                                    представляли из себя жестоких и кровожадных
+                                    существ. Они очень воинственный народ. Если
+                                    есть противник, они никогда не
+                                    поворачиваются к нему спиной.
+                                </p>
+                            </div>
+                            <div
+                                class="class-close_btn"
+                                onclick="classExtendClose()">
+                                <i class="fa-solid fa-xmark"></i>ЗАКРЫТЬ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer-link"></section>
+
+        <script src="main.js?v=23"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+            type="text/javascript"
+            src="slick-1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(function () {
+                $('#header-link').load('assets/header.html?v=16');
+                $('#footer-link').load('assets/footer.html?v=14');
+            });
+        </script>
+
+        <script>
+            AOS.init({
+                offset: 20,
+                duration: 600,
+            });
+        </script>
+    </body>
+</html>

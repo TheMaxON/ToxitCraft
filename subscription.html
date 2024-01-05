@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>VeryToxic</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css?v=28'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/logo-mini.png">
+    <script src="https://kit.fontawesome.com/48043303b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="subscription-body">
+    <section id="header-link"></section>
+    <section class="main">
+        <div class="sub-page__main">
+            <div class="sub-page__title">Играть</div>
+            <div class="subscription-wrapper" data-aos='fade-up'>
+                <div class="sub-plan sub-week">
+                    <div class="plan-price">₴49.99</div>
+                    <div class="plan-time">МЕСЯЦ</div>
+                </div>
+                <div class="sub-plan sub-month">
+                    <div class="plan-price">₴499.99</div>
+                    <div class="plan-time">ГОД</div>
+                </div>
+                <div class="sub-plan sub-year">
+                    <div class="plan-price">₴999.00</div>
+                    <div class="plan-time">НАВСЕГДА</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-link"></section>
+
+    <script src='main.js?v=23'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('#header-link').load('assets/header.html?v=16')
+            $('#footer-link').load('assets/footer.html?v=14')
+        })
+    </script>
+
+    <script>
+        AOS.init({
+            offset: 20,
+            duration: 600,
+        });
+    </script>
+</body>
+
+</html>
